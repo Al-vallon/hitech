@@ -1,11 +1,12 @@
 <!doctype html>
-<html lang="en">
+<html lang="fr">
 
 <head>
-    <link rel="stylesheet" href="normalize.css" type="text/css" />
-    <link rel="stylesheet" href="bootstrap-grid.min.css" type="text/css" />
-    <link rel="stylesheet" href="bootstrap-reboot.min.css" type="text/css" />
-    <link rel="stylesheet" href="bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="asset/css/normalize.css" type="text/css" />
+    <link rel="stylesheet" href="asset/css/bootstrap-grid.min.css" type="text/css" />
+    <link rel="stylesheet" href="asset/css/bootstrap-reboot.min.css" type="text/css" />
+    <link rel="stylesheet" href="asset/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" type="text/css" />
     <link rel="stylesheet" href="asset/css/style.css" type="text/css" />
     <meta charset="UTF-8">
     <title>Hi-Tech.net</title>
@@ -15,16 +16,58 @@
 <body>
     <header>
         <div class="header_container">
-            <div>
+            <div class="option_display_header">
 
                 <div>
                     <p>Option d'affichage et d'accessibilité</p>
                 </div>
                 <div>
-                    <p>thème:<a href="#">sombre contrasté</a> <a href="#">Clair</a></p>
+                    <p>thème: <a href="#">sombre contrasté</a> <a href="#">Clair</a></p>
                 </div>
                 <div>
-                    <p>Interlignage:<a href="#">simple</a> <a href="#">augmenté</a></p>
+                    <p>Interlignage: <a href="#">simple</a> <a href="#">augmenté</a></p>
+                </div>
+
+            </div>
+
+
+
+            <div class="bg_header_mobile">
+                <div class="logo"><img src="asset/image/logo.svg" alt="logo"></img>
+                </div>
+                <h1 class="H1_name_header">HiTech.NET</h1>
+                <span>Tout le matériel High-Tech</span>
+
+                <div class="icon_user_header">
+                    <div class="icon_user">
+                        <a href="#"><i class="fa-solid fa-user"></i><p>Mon compte</p></a>
+                    </div>
+
+                    <div class="icon_basket">
+                        <a href="#"><i class="fa-solid fa-cart-shopping"></i><p>Mon panier</p></a>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="menu_header">
+                <div class="space_header_icon">
+                    <a href="#"><i class="fa-solid fa-desktop"></i>ordinateur</a>
+
+                </div>
+
+
+                <div>
+                    <a href="#"><i class="fa-solid fa-database"></i>Périphériques et composants</a>
+                </div>
+
+                <div class="space_header_icon">
+                    <a href="#"><i class="fa-solid fa-mobile-screen"></i> Téléphones </a>
+                </div>
+
+                <div class="space_header_icon">
+                    <a href="#"> <i class="fa-solid fa-clock"></i> Objets connéctés</a>
                 </div>
 
             </div>
@@ -34,13 +77,18 @@
 
 
     <main class="main_container_AOC">
+        <!--fil d ariane
+        
+        
+        
+        -->
 
         <h1>AOC 24B1XHS</h1>
 
         <div class="anchors_AOC">
-            <a href="anchor_presentation">Présentation</a>
-            <a href="anchor_descriptif">Descriptif</a>
-            <a href="#">Caractéristiques techniques</a>
+            <a href="#anchor_presentation">Présentation</a>
+            <a href="#anchor_descriptif">Descriptif</a>
+            <a href="#anchor_carac">Caractéristiques techniques</a>
         </div>
 
         <section>
@@ -48,16 +96,33 @@
                 <h2>Présentation </h2>
             </a>
 
+            <div class="container_etiquette">
+                <span class="etiquette">1920x1080 pixles</span>
+                <span class="etiquette">7 ms</span>
+                <span class="etiquette">Format large 16/9</span>
+                <span class="etiquette">dalle IPS</span>
+                <span class="etiquette">HDMI</span>
+                <span class="etiquette">VGA</span>
+                <span class="etiquette">noir</span>
 
+            </div>
 
             <div>
-                <div>
-                    <img src="" alt="screen"></img>
-                </div>
+                <!--<div>-->
+                <!--    <img src="asset/image/product-1/slide-1-md.jpg" alt="screen"></img>-->
+                <!--</div>-->
+
+                <!--<div>-->
+                <!--    <img src="asset/image/product-1/slide-1-md.jpg" alt="screen_slide1 target"></img>-->
+                <!--    <img src="asset/image/product-1/slide-2-md.jpg" alt="screen_slide2"></img>-->
+                <!--    <img src="asset/image/product-1/slide-3-md.jpg" alt="screen_slide3"></img>-->
+                <!--    <img src="asset/image/product-1/slide-4-md.jpg" alt="screen_slide4"></img>-->
+                <!--    <img src="asset/image/product-1/slide-5-md.jpg" alt="screen_slide5"></img>-->
+                <!--</div>-->
 
                 <h3>Marque: AOC</h3>
 
-                <div>
+                <div class="container_price">
                     <p>109€94 dont éco-participation 1€70</p>
                     <div>
                         <div>
@@ -69,18 +134,19 @@
                     <div>
                         <p> garantie: 2 années vendeur</p>
                     </div>
-
-                    <div>
-                        <p>
-                            Un écran 23,8" Full HD et sans bords; c'est sûrement votre futur moniteur pour la maison ou le bureau. AOC vous propose le 24B1XHS, un produit élégant au look doté d'une dalle VA avec un temps de réponse rapide de 7 ms en résolution 1920 x 1080 pixels.
-                            Cet écran WLED très fonctionnel offre un contenu avec un fréquence de 60 Hz, idéal pour tous les usages du quotidien.
-                        </p>
-
-                        <p>- Écran large de 23.8" avec résolution Full HD (1920 x 1080) - Des couleurs riches et nuancées avec un contraste dynamique de 20.000.000:1 (typique 1000:1) - Temps de réponse de 7 ms - Dalle IPS - Luminosité 250 cd/m² - Modes Flicker-Free
-                            et Anti-lumière bleue (Low blue mode) - Connecteurs : HDMI 1.4, VGA - Design sans contour & profil plat - Consommation d'énergie modeste : 25 Watts - Dimensions (avec support) : 419.8 x 540.1 x 186.8 mm - Poids : 2.48 kg</p>
-                    </div>
-
                 </div>
+
+                <div>
+                    <p>
+                        Un écran 23,8" Full HD et sans bords; c'est sûrement votre futur moniteur pour la maison ou le bureau. AOC vous propose le 24B1XHS, un produit élégant au look doté d'une dalle VA avec un temps de réponse rapide de 7 ms en résolution 1920 x 1080 pixels.
+                        Cet écran WLED très fonctionnel offre un contenu avec un fréquence de 60 Hz, idéal pour tous les usages du quotidien.
+                    </p>
+
+                    <p>- Écran large de 23.8" avec résolution Full HD (1920 x 1080) - Des couleurs riches et nuancées avec un contraste dynamique de 20.000.000:1 (typique 1000:1) - Temps de réponse de 7 ms - Dalle IPS - Luminosité 250 cd/m² - Modes Flicker-Free
+                        et Anti-lumière bleue (Low blue mode) - Connecteurs : HDMI 1.4, VGA - Design sans contour & profil plat - Consommation d'énergie modeste : 25 Watts - Dimensions (avec support) : 419.8 x 540.1 x 186.8 mm - Poids : 2.48 kg</p>
+                </div>
+
+                <!--</div>-->
 
 
 
@@ -95,9 +161,9 @@
 
             <div>
                 <h3>Un moniteur Full HD performant et tout en finesse.</h3>
-                <div>
-                    <img src="asset/image/product-1/screen.png" alt="screen_dim"></img>
-                </div>
+                <!--<div>-->
+                <!--    <img src="asset/image/product-1/screen.png" alt="screen_dim"></img>-->
+                <!--</div>-->
                 <div>
                     <p>Issu de la série B1, le moniteur AOC 24B1XHS dispose de tous les atouts indispensables pour offrir une expérience utilisateur agréable. Son écran Full HD de 23.8" s'accompagne d'une dalle IPS ainsi que d'un temps de réponse de 7 ms
                         pour une image toujours performante. Aussi, le 24B1XHS séduit par son profil plat et son design sans contour qui favorise le plaisir visuel et l'immersion. Ce moniteur WLED trouvera facilement une place de choix sur votre bureau
@@ -105,20 +171,162 @@
                     </p>
                 </div>
             </div>
-            
-             <div>
-                <h3>Appréciez le design sans contour.</h3>
-                <div>
-                    <img src="asset/image/product-1/screen.png" alt="screen_dim"></img>
-                </div>
-                <div>
-                    <p>En plus du look moderne et attrayant qu'il procure, le design sans contour permet des configurations à plusieurs écrans sans interruption. Votre curseur, vos fenêtres ne sont plus perdus dans les abysses sombres des contours lorsque plusieurs écrans sont placés les uns à côté des autres.
 
+            <div>
+                <h3>Appréciez le design sans contour.</h3>
+                <!--<div>-->
+                <!--    <img src="asset/image/product-1/desc-1.jpg" alt="screen_3"></img>-->
+                <!--</div>-->
+                <div>
+                    <p>En plus du look moderne et attrayant qu'il procure, le design sans contour permet des configurations à plusieurs écrans sans interruption. Votre curseur, vos fenêtres ne sont plus perdus dans les abysses sombres des contours lorsque
+                        plusieurs écrans sont placés les uns à côté des autres.
+                    </p>
+
+                    <p>Le profil plat de ce moniteur AOC offre de nombreux avantages. Très élégant sous tous les angles, il devient un choix idéal dans les espaces publics. Sa finesse et sa conception moderne lui permettent d'occuper moins de place sur le
+                        bureau.
                     </p>
                 </div>
             </div>
 
+            <div>
+                <h3>Tous le confort nécessaire.</h3>
+                <!--<div>-->
+                <!--    <img src="asset/image/product-1/desc-2.jpg"></img>-->
+                <!--</div>-->
+                <div>
+                    <p>Agréable visuellement et intuitif, ce moniteur dispose également d'une dalle IPS. Cette dernière reproduit des couleurs éclatantes et offre de très larges angles de vue. De cette façon, les images gardent toujours un excellent aspect
+                        et une parfaite précision, quel que soit l'angle auquel vous regardez l'écran.
+                    </p>
+
+                    <p>Vous voulez utiliser votre écran même dans un environnement très lumineux, à côté d'une fenêtre au soleil par exemple ? La haute luminosité de 250 cd/m² garantit une bonne visibilité, même dans des conditions difficiles.
+                    </p>
+                </div>
+            </div>
+
+
         </section>
+
+
+        <section>
+            <a id="anchor_carac">
+                <h2>Caractéristiques techniques</h2>
+            </a>
+
+            <div>
+                <div>
+                    <h3>Affichage</h3>
+                </div>
+
+                <div>
+                    <p>Taille de l'écran: 23.8 pouces</p>
+                    <p>Format de l'écran: 16/9</p>
+                    <p>Type de Dalle: Dalle IPS</p>
+                    <p>Technologie LCD: IPS</p>
+                    <p>Résolution Max: 1920 x 1080 pixels</p>
+                    <p>Dot Pitch: 0.2745 mm</p>
+                    <p>Luminosité: 250 cd/m²</p>
+                    <p>Contraste: 20000000 /1</p>
+                    <p>Temps de réponse: 7 ms</p>
+                    <p>Angle de vision (horizontal): 178 Degré(s)</p>
+                    <p>Angle de vision (vertical): 178 Degré(s)</p>
+                    <p>Dalle mate/antireflets: Oui</p>
+                    <p>NVIDIA G-SYNC: Non</p>
+                    <p>Adaptive-Sync: Non</p>
+                    <p>AMD FreeSync: Non</p>
+                    <p>Flicker-Free: Oui</p>
+                    <p> Anti-lumière bleue: Oui</p>
+                </div>
+            </div>
+
+            <div>
+                <div>
+                    <h3>Ecran</h3>
+                </div>
+                <div>
+                    <p>Type d'écran: LED</p>
+                    <p>Ecran large: Oui</p>
+                    <p>Ecran incurvé: Non</p>
+                    <p>Borderless: Oui</p>
+                    <p>Compatible 3D: Non</p>
+                    <p>Ecran tactile: Non</p>
+                    <p>Fréquence verticale mini: 60 Hz</p>
+                    <p>Type d'activités: Bureautique</p>
+                </div>
+
+            </div>
+
+            <div>
+                <div>
+                    <h3>Ergonomie</h3>
+                </div>
+                <div>
+                    <p>Pivot: Non</p>
+                    <p>Pied réglable en hauteur: Non</p>
+                    <p>Pied amovible: Oui</p>
+                    <p>Fixation VESA: N/A</p>
+                    <p>Angle inclinaison vers l'arrière (haut): 21.5 Degré(s)</p>
+                    <p>Angle inclinaison vers l'avant (bas): 3.5 Deg</p>
+                </div>
+            </div>
+
+            <div>
+                <div>
+                    <h3>Connectique</h3>
+                </div>
+                <div>
+                    <p>Entrées vidéo: 1 X HDMI Femelle</p>
+                    <p>1 X VGA (D-sub 15 Femelle)</p>
+                    <p>Entrée audio: Aucun(e)</p>
+                    <p>Sorties audio: 1 X Line OUT (Jack 3.5mm Femelle)</p>
+                </div>
+            </div>
+
+            <div>
+                <div>
+                    <h3>Multimédia</h3>
+                </div>
+                <div>
+                    <p>H.P. Intégrés: Non</p>
+                    <p>Webcam: Non</p>
+                    <p>Tuner TV: Non</p>
+                </div>
+            </div>
+
+            <div>
+                <div>
+                    <h3>Caractéristiques physiques</h3>
+                </div>
+                <div>
+                    <p>Couleur: Noir</p>
+                    <p>Largeur: 540.1 mm</p>
+                    <p>Hauteur: 417.4 mm</p>
+                    <p>Profondeur: 186.8 mm</p>
+                    <p>Poids: 2.48 kg</p>
+                    <p>Pack multi-écrans: Non</p>
+                </div>
+            </div>
+
+            <div>
+                <div>
+                    <h3>Alimentation</h3>
+                </div>
+                <div>
+                    <p>Consommation: 25 W</p>
+                    <p>Consommation en veille: 0.5 W</p>
+                    <p>Alimentation interne: Non</p>
+                </div>
+            </div>
+
+        </section>
+
+
+        <footer>
+            <div>
+                <div></div>
+                <div></div>
+                <div></div>
+            </div>
+        </footer>
 
     </main>
 </body>

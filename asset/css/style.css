@@ -5,10 +5,99 @@
 *
 ****************/
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Raleway:wght@100&display=swap");
+h1 {
+  font-size: 3.6rem;
+  font-family: raleway serif;
+  color: #333; }
+
+h2 {
+  font-size: 2.4rem;
+  font-family: raleway serif;
+  color: #333; }
+
+h3 {
+  font-size: 1.8rem;
+  font-family: raleway serif;
+  color: #333; }
+
 body {
   box-sizing: border-box;
   max-width: 1140px;
+  color: #555;
+  font-size: 1.5rem; }
+
+.H1_name_header span {
+  color: #fff; }
+
+.option_display_header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #e2f7ff; }
+
+.H1_name_header {
+  font-size: 3.6rem;
+  font-family: raleway serif;
+  color: #fff; }
+
+.bg_header_mobile {
+  background-image: url("../image/header.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+
+.logo {
+  width: 10%; }
+
+.icon_user_header {
+  display: flex; }
+
+.icon_user,
+.icon_basket {
   font-size: 1.5rem;
-  line-height: 2.0rem; }
+  text-align: center;
+  margin-left: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
+.icon_user a,
+.icon_basket a {
+  color: #fff; }
+
+.menu_header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #e2f7ff; }
+
+.space_header_icon {
+  padding: 8px; }
+
+.anchors_AOC {
+  display: flex;
+  flex-direction: column;
+  align-content: start; }
+
+.etiquette {
+  background-color: #dae0e5;
+  height: auto; }
+
+.container_etiquette {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-around; }
+
+.container_price {
+  background-color: #eee; }
+
+.in_basket {
+  background-color: #0c6588; }
 
 /*# sourceMappingURL=style.css.map */
