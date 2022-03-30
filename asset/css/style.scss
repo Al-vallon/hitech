@@ -6,20 +6,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Raleway:wght@100&display=swap');
 
-@mixin flex_columns_center {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-@mixin flex_center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
-
 
 $font_size:1.5rem;
 $font_size_h1:3.6rem;
@@ -39,22 +25,41 @@ $color_link_button_hover:#000;
 $color_link_footer:#eee;
 
 
+@mixin flex_columns_center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+@mixin flex_center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin img_resp {
+    width: 100%;
+    height: auto;
+}
+
 h1 {
     font-size: 3.6rem;
     font-family: raleway serif;
-    color: #333;
+    color: $color_footer;
 }
 
 h2 {
     font-size: 2.4rem;
     font-family: raleway serif;
-    color: #333;
+    color: $color_footer;
+    margin: 2rem;
+
 }
 
 h3 {
     font-size: 1.8rem;
     font-family: raleway serif;
-    color: #333;
+    color: $color_footer;
 }
 
 
@@ -64,12 +69,14 @@ body {
     max-width: 1140px;
     color: #555;
     font-size: $font_size;
+    line-height: $line_height;
+    font-family: Open Sans arial;
 }
 
 
 
 .H1_name_header span {
-    color: #fff;
+    color: $color_main;
 }
 
 .option_display_header {
@@ -80,7 +87,7 @@ body {
 .H1_name_header {
     font-size: 3.6rem;
     font-family: raleway serif;
-    color: #fff
+    color: $color_main
 }
 
 .bg_header_mobile {
@@ -112,24 +119,40 @@ body {
 
 .icon_user a,
 .icon_basket a {
-    color: #fff;
+    color: $color_main;
+    font-size: 2.5rem;
 }
 
-.menu_header {
+.menu_header_foot {
     @include flex_columns_center;
     background-color: $color_menu;
 
 }
 
-.space_header_icon {
-    padding: 8px;
+.space_icon {
+    padding: 1.8rem;
 }
+
+
+/*******************************
+*         main
+*
+*******************************/
 
 .anchors_AOC {
     display: flex;
     flex-direction: column;
     align-content: start;
 
+}
+
+/**********************************
+* SECTION PRESENTATION
+*
+*********************************/
+
+.container_presentation {
+    margin-top: 3em;
 }
 
 .etiquette {
@@ -142,12 +165,174 @@ body {
     flex-wrap: wrap;
     align-items: center;
     justify-content: space-around;
+    margin-bottom: 2rem
 }
 
 .container_price {
     background-color: $color_grey;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 1.5rem 0;
 }
 
-.in_basket {
+.container_price_price {
+    @include flex_columns_center;
+    padding-top: 3rem;
+
+}
+
+.price_screen {
+    font-size: $font_size_h1;
+    padding-top: 5rem;
+}
+
+.add_basket {
     background-color: $color_header;
+    width: 10em;
+    color: $color_main;
+    text-align: center;
+    padding: 1em;
+}
+
+.add_wishlist {
+    color: $color_header;
+    background-color: $color_main;
+    width: 10em;
+    text-align: center;
+    padding: 1em;
+}
+
+
+.container_add {
+    @include flex_columns_center;
+    width: 10em;
+    background-color: $color_main;
+    text-align: center;
+    margin-left: 14rem;
+}
+
+.container_garanty {
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.1);
+    width: 100%;
+    padding: 2rem;
+
+}
+
+.container_description {
+    padding-left: 1rem;
+}
+
+
+/**************************
+* SECTION DESCRIPTIF
+*
+***************************/
+
+.container_descriptif_article {
+    margin-top: 3rem;
+}
+
+.container_size_picdim {
+    @include flex_center;
+    width: 90%;
+    height: auto;
+    border: 1px solid #e2f7ff;
+}
+
+.pic_dim {
+    width: 90%;
+}
+
+.container_design_pic_design {
+    @include flex_center;
+    width: 90%;
+    height: auto;
+    border: 1px solid #e2f7ff;
+}
+
+.pic_design {
+    width: 90%;
+}
+
+/***********************
+*
+        TABLEAU
+*
+************************/
+
+.container_tables {
+    margin-top: 3rem;
+}
+
+.caract_h3 {
+    margin-top: 8rem;
+    padding-left: 5em;
+}
+
+.container_table {
+    @include flex_center;
+    margin-top: 3rem;
+}
+
+.container_tables_tbody {
+    border: 1px solid black;
+    text-align: left;
+    width: 76%;
+}
+
+
+/*********************
+*
+    FOOTER
+*
+**********************/
+
+.footer {
+    margin-top: 5rem;
+    background-color: $color_footer;
+}
+
+.container_payment_social a {
+    color: $text_footer;
+}
+
+.container_img_payment {
+    @include img_resp;
+    @include flex_center;
+}
+
+.img_payment {
+    width: 55rem;
+}
+
+.container_payement_social_header {
+    text-align: center;
+}
+
+.container_payment_social,
+.about {
+    @include flex_columns_center;
+}
+
+.social_icons a,
+h2 {
+    color: $text_footer;
+}
+
+.social {
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+.list_footer a {
+    color: $color_main;
+    list-style-type: none;
+}
+
+.list_footer>ul {
+    list-style-type: none;
+    text-decoration:underline;
 }
